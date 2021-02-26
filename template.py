@@ -28,7 +28,7 @@ if __name__=='__main__':
     """
     if sys.argv[1][-4:]=='.csv':
         with open(sys.argv[1],'r') as f0:
-            reader=csv.reader()
+            reader=csv.reader(f0)
             datalist=[row for row in reader]
 
         for row in datalist:
